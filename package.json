@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon server.js",
-    "push": "rimraf node_modules && git push"
+    "dev": "nodemon server.js"
   },
   "keywords": [],
   "author": "",
