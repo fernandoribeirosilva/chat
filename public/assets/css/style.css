@@ -4,6 +4,11 @@
    box-sizing: border-box;
 }
 
+ul,
+li {
+   list-style: none;
+}
+
 .page {
    height: 100vh;
    justify-content: center;
@@ -12,7 +17,7 @@
 }
 
 #login-page {
-   display: flex;
+   display: none;
    background-color: #fff;
 }
 
@@ -28,5 +33,37 @@
 }
 
 #chat-page {
-   display: none;
+   display: flex;
+}
+
+.chat-area {
+   flex: 1;
+   width: 100%;
+   display: flex;
+   background-color: #ccc;
+}
+
+.chat-list {
+   flex: 1;
+   background-color: #fff;
+}
+
+.user-list {
+   width: 200px;
+   background-color: #ECF0F1;
+}
+
+.chat-input {
+   width: 100%;
+   display: flex;
+}
+
+#chat-text-input {
+   flex: 1;
+   height: 40px;
+   padding: 0 10px;
+   font-size: 15px;
+   background-color: #F5F5F5;
+   outline: none;
+   border: none;
 }
