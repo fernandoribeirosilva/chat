@@ -9,6 +9,10 @@ li {
    list-style: none;
 }
 
+h1 {
+   margin-bottom: 20px;
+}
+
 .page {
    height: 100vh;
    justify-content: center;
@@ -17,7 +21,7 @@ li {
 }
 
 #login-page {
-   display: none;
+   display: flex;
    background-color: #fff;
 }
 
@@ -33,7 +37,7 @@ li {
 }
 
 #chat-page {
-   display: flex;
+   display: none;
 }
 
 .chat-area {
@@ -56,13 +60,13 @@ li {
 }
 
 .chat-list::-webkit-scrollbar-track {
-   background-color: #f5f5f5;
+   background-color: #fff;
 }
 
 .chat-list::-webkit-scrollbar-thumb {
-   background-color: #b8b8b8b2;
+   background-color: #fff;
    border-radius: 10px;
-   border: 3px solid #f5f5f5;
+   border: 3px solid #fff;
 }
 
 .chat-list li {
