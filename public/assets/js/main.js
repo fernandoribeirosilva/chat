@@ -1,0 +1,1 @@
+const socket = io();// se for a conexão com outro servidor colocar a url do servidor, EX: io(url do servidor)
