@@ -3,3 +3,30 @@
    padding: 0;
    box-sizing: border-box;
 }
+
+.page {
+   height: 100vh;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+#login-page {
+   display: flex;
+   background-color: #fff;
+}
+
+#login-name-input {
+   width: 100%;
+   max-width: 400px;
+   border: 2px solid #000;
+   border-radius: 5px;
+   background-color: #ccc;
+   font-size: 18px;
+   padding: 10px;
+   outline: none;
+}
+
+#chat-page {
+   display: none;
+}
