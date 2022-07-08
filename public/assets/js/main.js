@@ -44,3 +44,9 @@ socket.on('user-ok', (list) => {
    userList = list;
    renderUserList();
 });
+
+// vai notificar todos os usuários que um novo usuário entrou, menos o próprio usuário
+socket.on('list-update', (data) => {
+   userList = data.list;
+   renderUserList();
+});
