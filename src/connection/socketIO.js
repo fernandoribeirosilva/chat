@@ -16,7 +16,13 @@ exports.io = {
             connectionUsers.push(username);
             console.log(connectionUsers);
 
+            // vai mostrar o usuário da requisição
             socket.emit('user-ok', connectionUsers);
+            // vai notificar todos os usuários que um novo usuário entrou, menos o próprio usuário
+            socket.broadcast.emit('list-update', {
+               joined: username, // usuário que entrou
+               list: connectionUsers // lista de usuários
+            });
          });
       });
    }
