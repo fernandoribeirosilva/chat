@@ -7,13 +7,20 @@ const loginPage = document.querySelector('#login-page');
 const chatPage = document.querySelector('#chat-page');
 
 const loginInput = document.querySelector('#login-name-input');
-const textInput = document.querySelector('#text-input');
+const textInput = document.querySelector('#chat-text-input');
 
 loginPage.style.display = 'flex';
 chatPage.style.display = 'none';
 
 const renderUserList = () => {
+   let ul = document.querySelector('.user-list');
+   ul.innerHTML = '';
 
+   userList.forEach(user => {
+      let li = document.createElement('li');
+      li.innerHTML = user;
+      ul.appendChild(li);
+   });
 }
 
 loginInput.addEventListener('keyup', (e) => {
