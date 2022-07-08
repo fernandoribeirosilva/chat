@@ -9,7 +9,9 @@ const server = http.createServer(app);// vai criar o servidor
 
 app.use(express.static(path.join(__dirname, '../', 'public')));
 
-io.onConnect(server);
+let connectionUsers = [];
+
+io.onConnect(server, connectionUsers);
 
 server.listen(3000, () => {
    console.log('Server running on http://localhost:3000');
